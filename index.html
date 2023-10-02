@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapse</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        div {
+            border: 10px solid white;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+        }
+        /* No margin collaps occurs */
+        .to-left {
+            float: left;
+        }
+        /* Margin collapse occurs */
+        .clear-float {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="to-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem?</div>
+    <div class="to-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem?</div>
+    <div class="to-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem?</div>
+    <div class="to-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem?</div>
+    <div class="clear-float">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem?</div>
+</body>
+</html>
